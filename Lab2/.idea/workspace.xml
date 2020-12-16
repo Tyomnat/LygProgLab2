@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5dd67d5b-2b58-4e3b-9199-da3e9052a22d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="C:\Users\Tomas\sdk\go1.15.4" />
+  <component name="ProjectId" id="1ljjStW6A52WCgiHqQxo4SWWHvF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\OneDrive - Kaunas University of Technology\3 Metai\Lygiagretusis Prog\Lab2\worker" />
+      <recent name="E:\OneDrive - Kaunas University of Technology\3 Metai\Lygiagretusis Prog\Lab2\results" />
+      <recent name="E:\OneDrive - Kaunas University of Technology\3 Metai\Lygiagretusis Prog\Lab2\data" />
+      <recent name="E:\OneDrive - Kaunas University of Technology\3 Metai\Lygiagretusis Prog\Lab2\automobile" />
+      <recent name="E:\OneDrive - Kaunas University of Technology\3 Metai\Lygiagretusis Prog\Lab2\constants" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Lab2" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1608119116645">
+      <screen x="4" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/4.-1080.1920.1040@4.-1080.1920.1040" timestamp="1608119116645" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1608119116645">
+      <screen x="4" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/4.-1080.1920.1040@4.-1080.1920.1040" timestamp="1608119116645" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1608119116645">
+      <screen x="4" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/4.-1080.1920.1040@4.-1080.1920.1040" timestamp="1608119116645" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1608119116645">
+      <screen x="4" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/4.-1080.1920.1040@4.-1080.1920.1040" timestamp="1608119116645" />
+    <state x="671" y="-961" width="585" height="801" key="find.popup" timestamp="1608118386360">
+      <screen x="4" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="671" y="-961" width="585" height="801" key="find.popup/0.0.1920.1040/4.-1080.1920.1040@4.-1080.1920.1040" timestamp="1608118386360" />
+  </component>
+</project>
