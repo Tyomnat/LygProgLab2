@@ -1,6 +1,11 @@
 package worker
 
-func StartWorker(dataRequestChannel chan<- int, dateReceiveChannel <-chan *Automobile, resultsChannel chan<- *Automobile, number int) {
+import (
+	"github.com/Tyomnat/LygProgLab2/Lab2/automobile"
+	"github.com/Tyomnat/LygProgLab2/Lab2/constants"
+)
+
+func StartWorker(dataRequestChannel chan<- int, dateReceiveChannel <-chan *automobile.Automobile, resultsChannel chan<- *automobile.Automobile, number int) {
 	finished := false
 	for !finished {
 		dataRequestChannel <- number
@@ -9,7 +14,7 @@ func StartWorker(dataRequestChannel chan<- int, dateReceiveChannel <-chan *Autom
 		if response != nil {
 			response.CalculateAutomobileHash()
 
-			if response.Price <= MaxAutoPrice {
+			if response.Price <= constants.MaxAutoPrice {
 				resultsChannel <- response
 			}
 		} else {

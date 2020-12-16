@@ -1,11 +1,16 @@
 package data
 
-func StartData(dataInputChannel <-chan *Automobile, requestsChannel <-chan int, dataOutputChannel chan<- *Automobile) {
-	var dataStorage []Automobile
+import(
+	"github.com/Tyomnat/LygProgLab2/Lab2/automobile"
+	"github.com/Tyomnat/LygProgLab2/Lab2/constants"
+)
+
+func StartData(dataInputChannel <-chan *automobile.Automobile, requestsChannel <-chan int, dataOutputChannel chan<- *automobile.Automobile) {
+	var dataStorage []automobile.Automobile
 	var inputFinished bool
 	var outputFinished int
 
-	for outputFinished != WorkerThreadCount {
+	for outputFinished != constants.WorkerThreadCount {
 		if len(dataStorage) == 0 && !inputFinished {
 			movie := <-dataInputChannel
 			if movie != nil {
@@ -17,7 +22,7 @@ func StartData(dataInputChannel <-chan *Automobile, requestsChannel <-chan int, 
 			continue
 		}
 
-		if len(dataStorage) == AllowedDataCount {
+		if len(dataStorage) == constants.AllowedDataCount {
 			<-requestsChannel
 			if !inputFinished || len(dataStorage) != 0 {
 				dataOutputChannel <- &dataStorage[0]

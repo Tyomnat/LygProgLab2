@@ -48,9 +48,9 @@ func WriteResultsToFile(results []Automobile, fileName string) error {
 
 	defer file.Close()
 
-	file.WriteString(fmt.Sprintf("%3s %50s %8s %8s\n", "No.", "Name", "Year", "Price"))
+	file.WriteString(fmt.Sprintf("%3s %20s %5s %6s\n", "No.", "Name", "Year", "Price"))
 	for i, r := range results {
-		file.WriteString(fmt.Sprintf("%3d %50s %8d %8.2f\n", i+1, r.Name, r.Year, r.Price))
+		file.WriteString(fmt.Sprintf("%3d %20s %5d %6.2f\n", i+1, r.Name, r.Year, r.Price))
 	}
 
 	return nil

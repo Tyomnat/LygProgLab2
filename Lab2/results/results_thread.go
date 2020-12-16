@@ -1,12 +1,18 @@
 package results
 
-import "sort"
+import (
+	"sort"
 
-func StartResults(workerChannel <-chan *Automobile, mainChannel chan<- []Automobile) {
-	var resultsStorage []Automobile
+	"github.com/Tyomnat/LygProgLab2/Lab2/automobile"
+	"github.com/Tyomnat/LygProgLab2/Lab2/constants"
+)
+
+
+func StartResults(workerChannel <-chan *automobile.Automobile, mainChannel chan<- []automobile.Automobile) {
+	var resultsStorage []automobile.Automobile
 	var workersFinished int
 
-	for workersFinished != WorkerThreadCount {
+	for workersFinished != constants.WorkerThreadCount {
 		result := <-workerChannel
 		if result != nil {
 			resultsStorage = insertSorted(resultsStorage, *result)
@@ -18,9 +24,9 @@ func StartResults(workerChannel <-chan *Automobile, mainChannel chan<- []Automob
 	mainChannel <- resultsStorage
 }
 
-func insertSorted(slice []Automobile, element Automobile) []Automobile {
+func insertSorted(slice []automobile.Automobile, element automobile.Automobile) []automobile.Automobile {
 	i := sort.Search(len(slice), func(i int) bool { return slice[i].Price < element.Price })
-	slice = append(slice, Automobile{Price: 0})
+	slice = append(slice, automobile.Automobile{Price: 0})
 	copy(slice[i+1:], slice[i:])
 	slice[i] = element
 	return slice
